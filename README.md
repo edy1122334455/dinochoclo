@@ -1,2 +1,2 @@
 # dinochoclo
-dino que se corre
+dino que corre
