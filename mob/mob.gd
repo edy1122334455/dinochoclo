@@ -8,19 +8,21 @@ func _ready():
 	var collisions = [
 		$CollisionA,
 		$ColFlor,
-		$ColBala
+		$ColBala,
+		$ColMosco
 	]
 	var sprites = [
 		$SpriteA,
 		$SpriteFlor,
-		$SpriteBala
+		$SpriteBala,
+		$SpriteMosco
 	]
 	var random_int = randi() % collisions.size()
 	var selected_collisions = collisions [random_int]
 	var selected_sprite = sprites[random_int]
 	selected_collisions.disabled = false
-	selected_sprite.visible = true
 	selected_collisions.visible = true
+	selected_sprite.visible = true
 	
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
