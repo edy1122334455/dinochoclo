@@ -13,7 +13,7 @@ config_version=5
 config/name="DinoRun"
 run/main_scene="res://background/background.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Captura de pantalla 2024-06-11 114451_preview_rev_1.png"
 
 [autoload]
 

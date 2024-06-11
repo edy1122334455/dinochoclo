@@ -20,6 +20,7 @@ func _ready():
 	var random_int = randi() % collisions.size()
 	var selected_collisions = collisions [random_int]
 	var selected_sprite = sprites[random_int]
+	
 	selected_collisions.disabled = false
 	selected_collisions.visible = true
 	selected_sprite.visible = true

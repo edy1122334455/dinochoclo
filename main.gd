@@ -30,4 +30,5 @@ func _on_mob_timer_timeout():
 		mob.position.y = 550
 		add_child(mob)
 		mob.hit.connect(game_over)
+		$MOBTimer.wait_time = 2
 

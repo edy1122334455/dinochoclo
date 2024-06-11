@@ -1,9 +1,9 @@
-[gd_scene load_steps=26 format=3 uid="uid://7xq3kqx333ax"]
+[gd_scene load_steps=25 format=3 uid="uid://7xq3kqx333ax"]
 
-[ext_resource type="Texture2D" uid="uid://bkvvbu2brm2mf" path="res://dinoplayer/blue.png" id="1_8jww7"]
 [ext_resource type="Script" path="res://dinoplayer/player.gd" id="1_w8ivj"]
 [ext_resource type="Texture2D" uid="uid://cyv82wvemml2" path="res://dinoplayer/Captura de pantalla 2024-06-10 094723_preview_rev_1.png" id="2_kg22p"]
 [ext_resource type="AudioStream" uid="uid://bm8fgxnnl5a5l" path="res://dinoplayer/jump.mp3" id="3_80214"]
+[ext_resource type="Texture2D" uid="uid://drp684jodnsvc" path="res://dinoplayer/Captura de pantalla 2024-06-11 104016_preview_rev_1.png" id="3_ie27g"]
 [ext_resource type="Texture2D" uid="uid://dbx1n81qf75s0" path="res://dinoplayer/Captura de pantalla 2024-06-10 095531_preview_rev_1.png" id="4_adxbb"]
 [ext_resource type="Texture2D" uid="uid://bcrftg4hgy47c" path="res://dinoplayer/Captura de pantalla 2024-06-10 093846_preview_rev_1.png" id="4_st7qr"]
 
@@ -27,13 +27,9 @@ region = Rect2(276, 0, 84, 87)
 atlas = ExtResource("2_kg22p")
 region = Rect2(368, 0, 84, 87)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vsbut"]
-atlas = ExtResource("1_8jww7")
-region = Rect2(24, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ae1wa"]
-atlas = ExtResource("1_8jww7")
-region = Rect2(48, 0, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_egs4m"]
+atlas = ExtResource("3_ie27g")
+region = Rect2(1, 0, 75, 83)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eotq6"]
 atlas = ExtResource("4_adxbb")
@@ -95,10 +91,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vsbut")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ae1wa")
+"texture": SubResource("AtlasTexture_egs4m")
 }],
 "loop": true,
 "name": &"default",
@@ -143,7 +136,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kbyhr"]
-size = Vector2(429.096, 23.1523)
+size = Vector2(429.096, 26.5461)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8cgde"]
 size = Vector2(152, 82)
@@ -155,12 +148,12 @@ script = ExtResource("1_w8ivj")
 position = Vector2(16, 1.52588e-05)
 scale = Vector2(1.67447, 1.61196)
 sprite_frames = SubResource("SpriteFrames_cgthg")
-animation = &"jump"
-frame_progress = 0.894372
+animation = &"run"
+frame_progress = 0.343755
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(16, 32)
-scale = Vector2(0.328621, 2.88984)
+position = Vector2(16, 18.2601)
+scale = Vector2(0.327956, 3.18391)
 shape = SubResource("RectangleShape2D_kbyhr")
 debug_color = Color(0.840405, 0.197274, 0.805285, 0.42)
 
@@ -168,6 +161,7 @@ debug_color = Color(0.840405, 0.197274, 0.805285, 0.42)
 stream = ExtResource("3_80214")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(12, 31)
+position = Vector2(16, 32)
+scale = Vector2(0.917794, 0.767497)
 shape = SubResource("RectangleShape2D_8cgde")
 debug_color = Color(0.980976, 0, 0.375071, 0.42)
